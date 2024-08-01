@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container" id="home">
+        <!-- Sidebar -->
+        <div class="menu-btn" id="menu-btn">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <aside id="menu-bar">
+            <div class="toggle sidebar">
+                <div class="flex align-center justify-space">
+                    <a href="#home"><h2>Home</h2></a>
+                    <span class="material-symbols-outlined close-btn" id="close-btn">
+                        close
+                    </span>
+                </div>
+                <nav>
+                    <h3>My art</h3>
+                    <div class="spaced">
+                        <a href="#illustrations"><h3>-Illustrations</h3></a>
+                        <a href="#vtubers"><h3>-VTuber Models</h3></a>
+                    </div>
+                    <a href="#pricing"><h3>Pricing</h3></a>
+                    <a href="#tos"><h3>Terms Of Serivce</h3></a>
+                    <a href="#contact-about"><h3>Contact</h3></a>
+                    <a href="#contact-about"><h3>About</h3></a>
+                </nav>
+            </div>
+            <div class="dark-mode-button">
+                <span class="material-symbols-outlined" id="sun">
+                    light_mode
+                </span>
+                <span class="material-symbols-outlined opposite" id="moon">
+                    dark_mode
+                </span>
+            </div>
+        </aside>
+        <!-- End of Sidebar -->
+        <main class="drop-grid">
+            <section class="card first">
+                <!-- Main text -->
+                <div class="b2">
+                    <div class="b1">
+                        <div class="hero">
+                            <div class="the-box">
+                                <h1>Hoshikuzu Jesse</h1>
+                                <h2><span>Illustrator</span> and <span>VTuber Artist</span></h2>
+                                <h3>Hoping to bring your ideas and characters to life!</h3>
+                                <a href="#contact-about">Get your Commission!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Latest Commissions Scrollable -->
+                <div class="latestcomms">
+                    <h2>Latest Works</h2>
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+            </section>
+            <!-- Gallery for illustrations -->
+            <section class="subc card" id="illustrations">
+                <div>
+                    <h2>Illustrations</h2>
+                    <div class="gallery illust">
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/spike_commission_dnd.jpg" alt="J'ito"></figure>
+                        <figure><img loading="lazy" class="galleryimg" id="prospero" src="assets/images/felix's_Prospero.jpg" alt="Prospero Anno"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/dd.jpg" alt="Demondice"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/ddk.jpg" alt="Demondice_Alkatraz"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/wizard.jpg" alt="Elias Farland"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/Fern.jpg" alt="Fern from frieren"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/miri.jpg" alt=""></figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Gallery for Vtubers -->
+            <section class="subc card" id="vtubers">
+                <div>
+                    <h2>
+                        VTuber Models
+                    </h2>
+                    <div class="gallery vtubers">
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/gerbil_cowgirl_ad_2.jpg" alt="Gerbil Cowgirl"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/Whitecat_vtuber.jpg" alt="Whitecat Adoptable"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/Kyuya_model_v2.0_(1).jpg" alt="Kyuya Akeru v2.0"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/wolf_girl.jpg" alt="Wolf Girl"></figure>
+                        <figure><img loading="lazy" class="galleryimg" src="assets/images/Red_panda.jpg" alt="Sleepy Panda"></figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal for expanding images -->
+            <div class="modal" id="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img">
+            </div>
+            <!-- Pricing -->
+            <section class="subc card" id="pricing">
+                <div>
+                    <h2>Pricing</h2>
+                    <div class="pricing">
+                        <!-- Left card -->
+                        <div class="box left">
+                            <div class="title">
+                                <h2>Illustrations</h2>
+                            </div>
+                            <div class="description">
+                                <div class="separation top">
+                                    <div class="left">
+                                        <h4>Full Colored Render</h4>
+                                        <p>Fully Shaded, Clean Lineart</p>
+                                        <h4>Colored Sketch</h4>
+                                        <p>No Shading, Messy Lineart</p>
+                                        <h4>Sketch</h4>
+                                        <p>Plain Sketch, No Colors</p>
+                                    </div>
+                                    <div class="money">
+                                        <h4>$50</h4>
+                                        <h4>$30</h4>
+                                        <h4>$15</h4>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h2>Extras</h2>
+                                    <div class="separation">
+                                        <div class="left">
+                                            <h4>+ Character</h4>
+                                            <h4>+ Background</h4>
+                                            <h4>+ NSFW</h4>
+                                        </div>
+                                        <div class="money">
+                                            <h4>$20</h4>
+                                            <h4>$20</h4>
+                                            <h4>$30</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right card -->
+                        <div class="box right">
+                            <div class="title">
+                                <h2>VTuber Models</h2>
+                            </div>
+                            <div class="description">
+                                <div class="separation top">
+                                    <div class="left">
+                                        <h4>Full-Body</h4>
+                                        <p>2 Outfits, 3 Expressions</p>
+                                        <h4>Half-Body</h4>
+                                        <p>1 Outfit, 2 Expressions</p>
+                                        <h4>Bust-Up</h4>
+                                        <p>1 Outfit, 1 Expression</p>
+                                    </div>
+                                    <div class="money">
+                                        <h4>$500</h4>
+                                        <h4>$375</h4>
+                                        <h4>$250</h4>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h2>Extras</h2>
+                                    <div class="separation">
+                                        <div class="left">
+                                            <h4>+ Outfit (Each)</h4>
+                                            <h4>+ Expression (Each)</h4>
+                                            <h4>+ Mascot</h4>
+                                        </div>
+                                        <div class="money">
+                                            <h4>$100</h4>
+                                            <h4>$20</h4>
+                                            <h4>$75</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Terms Of Service -->
+            <section class="subc card" id="tos">
+                <h2>Terms Of Service</h2>
+                <ol>
+                    <li>Please be <strong>respectful</strong>. If you are being rude I will turn down your commission.</li>
+                    <li>Payment will be made via <strong>PayPal</strong> for <strong>USD</strong>.</li>
+                    <li>The PSD file or completed illustration will not be delivered until <strong>full payment is confirmed.</strong></li>
+                    <li>The deadline will be discussed <strong>before</strong> the commission is started, if it needs to be shortened mid-commission an extra fee will be charged.</li>
+                    <li>Changes won't be charged extra while in the sketching phase.</li>
+                    <li>If the client needs any <strong>big change</strong> regarding character design after the actual model or illustration has been started, an extra fee will be applied. The same goes if the commission is already finished.</li>
+                    <h3>VTuber Only</h3>
+                    <li>The model cannot be sold for a price higher than the original.</li>
+                    <li>The artist should be credited <strong>at least in one place</strong> when the model is being used in a public platform.</li>
+                    <li>Both the artist and the rigger have the right to post their work as an achievement in social media and their portfolio after the commissioner has publicly shown the model.</li>
+                    <li>I don't take responsibility for any troublesome use of the model by the commissioner.</li>
+                </ol>
+                <div class="tos-footer">
+                    <p><em>(particular situations can be discussed)</em></p>
+                    <p><strong>By commissioning me you agree to my ToS</strong></p>
+                </div>
+            </section>
+            <!-- Contact & About -->
+            <section class="subc card" id="contact-about">
+                <h2>Contact & About</h2>
+                <div>
+                    <div class="contact">
+                        <div class="flex column">
+                            <div class="">
+                                <div class="flex align-center">
+                                    <!-- Twitter -->
+                                    <a href="" target="_blank" class="fab fa-twitter"></a>
+                                    <input type="text" value="@hoshikuzujesse" id="copyTwitter">
+                                    <h4 class="selectable">@hoshikuzujesse</h4>
+                                    <!-- Discord -->
+                                </div>
+                                <div class="flex align-center">
+                                    <a href="" class="fab fa-discord"></a>
+                                    <h4 class="selectable">hoshikuzu_jesse</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex column">
+                            <div>
+                                <div class="flex align-center">
+                                    <div class="copy" onclick="copyTwitter()">
+                                        <span class="material-symbols-outlined contCopy" id="check">
+                                            content_copy
+                                        </span>
+                                    </div>
+                                    <a href="https://x.com/hoshikuzujesse" target="_blank">
+                                        <span class="material-symbols-outlined" id="forwardTwitter">
+                                            send
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="copy flex" onclick="copyDiscord()">
+                                    <span class="material-symbols-outlined  contCopy" id="check2">
+                                        content_copy
+                                    </span>
+                                </div>
+                                <input type="text" value="hoshikuzu_jesse" id="copyDiscord">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <p><em>(If possible I prefer Discord! ^^)</em></p>
+                <div class="about">
+                    <h3>About</h3>
+                    <p>
+                        Hi! Hope you're having a great day.
+                        My name is <strong>Jesse</strong> and I've been drawing and helping with <strong>Live2D Art</strong> since <strong>2020.</strong>
+                    </p>
+                    <p>
+                        Here you can check my most recent commissions, as well as pricing and ToS. If you'd like to inquire about anything I'm always open for conversation, I speak both <strong>English</strong> and <strong>Spanish</strong> fluently, so please feel free to use whichever you prefer.
+                    </p>
+                    <p>
+                        Having said that, thanks for checking my page! Hope to hear about you soon!
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="flex column align-center">
+            <p>Hoshikuzu_Jesse 2024</p>
+            <p>Website made by Ezequiel Rodas - ezero03@hotmail.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
