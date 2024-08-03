@@ -1,8 +1,8 @@
 /* General Variables */
 :root {
     --color-primary: ;
-    --color-dark: #363636;
-    --color-dark-var: #525252;
+    --color-dark: #2b282e;
+    --color-dark-var: #473f4b;
     --color-background: #f0e9f3;
     --color-accent: #ba7fdb;
     --color-accent-var: #945cc9;
@@ -17,10 +17,10 @@
 .dark-mode-variables {
     --color-dark: #fff;
     --color-dark-var: #f0e9f3;
-    --color-background: #525252;
+    --color-background: #35323a;
     --color-accent-var: #e386ff;
     --color-accent: #e386ff;
-    --color-white: #363636;
+    --color-white: #2b282e;
     --color-white-transparent: rgba(54, 54, 54, .7);
 }
 
